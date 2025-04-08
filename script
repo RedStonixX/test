@@ -114,4 +114,4 @@ ignore perfdata = true
 [/settings/external scripts/scripts]
 check_logfiles=scripts\\centreon\\check_logfiles.exe $ARG1$
 check_centreon_plugins=scripts\\centreon\\centreon_plugins.exe --plugin=$ARG1$ --mode=$ARG2$ $ARG3$
-check-bat-count = cmd /c echo scripts\check-bat-count.ps1; exit($lastexitcode) | powershell.exe -command -
+check-bat-count = powershell.exe -ExecutionPolicy Bypass -NoProfile -File "scripts\\check-bat-count.ps1"

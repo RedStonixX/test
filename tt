@@ -1,0 +1,84 @@
+PS C:\Program Files\Centreon NSClient++> Restart-Service nscp
+PS C:\Program Files\Centreon NSClient++> .\nscp test --module CheckExternalScripts --command check-bat-count
+L     client Extra options: --module
+L     client Extra options: CheckExternalScripts
+L     client Extra options: --command
+L     client Extra options: check-bat-count
+D       core NSClient++ 0.5.2.41 2018-04-26 x64 Loading settings and logger...
+D       core Settings not ready so we cant lookup: base-path
+D       core Settings not ready so we cant lookup: exe-path
+D   settings Boot.ini found in: C:\Program Files\Centreon NSClient++/boot.ini
+D       core Settings not ready so we cant lookup: shared-path
+D   settings Activating: ini://${shared-path}/nsclient.ini
+D   settings Creating instance for: ini://${shared-path}/nsclient.ini
+D       core Settings not ready so we cant lookup: shared-path
+D   settings Loading: C:\Program Files\Centreon NSClient++/nsclient.ini
+D       core NSClient++ 0.5.2.41 2018-04-26 x64 booting...
+D       core Booted settings subsystem...
+D       core On crash: restart: NSCP
+D       core Archiving crash dumps in: C:\Program Files\Centreon NSClient++/crash-dumps
+D       core Found: CheckDisk
+D       core Found: CheckEventLog
+D       core Found: CheckExternalScripts
+D       core Found: CheckHelpers
+D       core Found: CheckNSCP
+D       core Found: CheckNet
+D       core Found: CheckSystem
+D       core Found: CheckTaskSched
+D       core Found: NRPEServer
+D       core Found: WEBServer
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckDisk.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckEventLog.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckExternalScripts.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckHelpers.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckNSCP.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckNet.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckSystem.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CheckTaskSched.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\NRPEServer.dll ()
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\WEBServer.dll ()
+D       core Loading plugin: CheckDisk
+D       core Loading plugin: CheckEventLog
+D       core Loading plugin: CheckExternalScripts
+D ext-script No aliases found (adding default)
+D       core Loading plugin: CheckHelpers
+D       core Loading plugin: CheckNSCP
+D check_nscp Crash folder is: C:\Program Files\Centreon NSClient++/crash-dumps
+D       core Loading plugin: CheckNet
+D       core Loading plugin: CheckSystem
+D       core Loading plugin: CheckTaskSched
+D       core Loading plugin: NRPEServer
+D       nrpe Non-standard buffer length (hope you have recompiled check_nrpe changing #define MAX_PACKETBUFFER_LENGTH = 8192
+D       nrpe Allowed hosts definition: 0.0.0.0(0.0.0.0)
+D       nrpe Server config: address: :5666, ssl enabled: none, cert: C:\Program Files\Centreon NSClient++/security/certificate.pem (PEM), , dh: C:\Program Files\Centreon NSClient++/security/nrpe_dh_2048.pem, ciphers: ALL:!ADH:!LOW:!EXP:!MD5:@STRENGTH, ca: C:\Program Files\Centreon NSClient++/security/ca.pem, options:
+D       nrpe Binding to: [::]:5666(ipv6)
+D       nrpe Attempting to bind to: [::]:5666(ipv6)
+D       nrpe Binding to: 0.0.0.0:5666(ipv4), reopen: true, reuse: true
+D       nrpe Attempting to bind to: 0.0.0.0:5666(ipv4)
+D       core Loading plugin: WEBServer
+D        web Using certificate: C:\Program Files\Centreon NSClient++/security/certificate.pem
+E        web Failed to start server: failed to open listener
+                    c:\source\0.5.2\modules\WEBServer\WEBServer.cpp:179
+D       core NSClient++ - 0.5.2.41 2018-04-26 Started!
+D       core Loading module C:\Program Files\Centreon NSClient++\modules\CommandClient.dll ()
+D       core Loading plugin: CommandClient...
+D        cli Enter command to execute, help for help or exit to exit...
+D  w32system Loading counter: disk_queue_length_0 C: = \\WIN-FL7DS35BHVQ\Disque physique(0 C:)\Pourcentage du temps disque
+D  w32system Loading counter: disk_queue_length__Total = \\WIN-FL7DS35BHVQ\Disque physique(_Total)\Pourcentage du temps disque
+L        cli Ctrl+c is not exit...
+DoneD       core Attempting to stop all plugins
+
+D       core Stopping all plugins
+D       core Unloading plugin: CheckDisk...
+D       core Unloading plugin: CheckEventLog...
+D       core Unloading plugin: CheckExternalScripts...
+D       core Unloading plugin: CheckHelpers...
+D       core Unloading plugin: CheckNSCP...
+D       core Unloading plugin: CheckNet...
+D       core Unloading plugin: CheckSystem...
+D       core Unloading plugin: CheckTaskSched...
+D       core Unloading plugin: NRPEServer...
+D       core Unloading plugin: WEBServer...
+D       core Unloading plugin: CommandClient...
+D       core Stopping: COM helper
+D       core Stopping: Settings instance
